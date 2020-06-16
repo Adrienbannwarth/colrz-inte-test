@@ -1,0 +1,64 @@
+header {
+  .content-img {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 90px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .img-loop {
+    z-index: 5;
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    margin-left: 20px;
+
+    @include sm {
+      width: 30px;
+      height: 30px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.card {
+  .container-img {
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 70%;
+
+      @include sm {
+        padding-bottom: 100%;
+      }
+    }
+  }
+
+  .img-arrow {
+    width: 30px;
+
+    @include md {
+      display: none;
+    }
+  }
+}
+
+.content-logo {
+  .img-logo {
+    width: 150px;
+  }
+}

@@ -1,0 +1,42 @@
+h1 {
+  width: 550px;
+  margin-left: 15%;
+  margin-bottom: 30px;
+  color: $color-white;
+  font-size: 65px;
+
+  @include md {
+    margin-left: 70px;
+    width: 400px;
+    font-size: 55px;
+  }
+
+  @include sm {
+    width: 300px;
+    margin-left: 0;
+    font-size: 30px;
+  }
+
+  span {
+    font-weight: 300;
+  }
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+footer {
+  h4 {
+    margin-bottom: 25px;
+    color: $color-white;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    @include sm {
+      margin-bottom: 5px;
+    }
+  }
+}
