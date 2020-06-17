@@ -17,6 +17,10 @@ h1 {
     font-size: 30px;
   }
 
+  @include xs {
+    width: 220px;
+  }
+
   span {
     font-weight: 300;
   }
@@ -30,7 +34,7 @@ h4 {
 
 footer {
   h4 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     color: $color-white;
     font-size: 14px;
     text-transform: uppercase;
